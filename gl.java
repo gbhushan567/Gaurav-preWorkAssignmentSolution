@@ -51,6 +51,7 @@ public class gl {
 		Scanner scan= new Scanner(System.in);
 		System.out.println("Enter any number:");
 		int num=scan.nextInt();
+		scan.close();
 		for(int i=2;i<=num/2;i++)
 		{
 			temp=num%i;
@@ -81,7 +82,6 @@ public class gl {
 			c = a + b;
 			System.out.print(a+" ");
 		}
-		System.out.println();
 	}
 
 	//main method which contains switch and do while loop
@@ -108,76 +108,36 @@ public class gl {
 
 			switch (choice) {
 
-
-
 			case 0:
-
 				choice = 0;
-
 				break;
 
-
-
 			case 1: {
-
 				obj.checkPalindrome();
-
 			}
-
 			break;
-
-
 
 			case 2: {
-
-
-
 				obj.printPattern();
-
 			}
-
 			break;
-
-
 
 			case 3: {
-
 				obj.checkPrimeNumber();
-
 			}
-
 			break;
-
-
 
 			case 4: {
-
-
-
 				obj.printFibonacciSeries();
-
 			}
-
 			break;
 
-
-
 			default:
-
 				System.out.println("Invalid choice. Enter a valid no.\n");
-
 			}
 
-
-
 		} while (choice != 0);
-
 		System.out.println("Exited Successfully!!!");
-
 		sc.close();
-
 	}
-
-
-
 }
