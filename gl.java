@@ -51,7 +51,6 @@ public class gl {
 		Scanner scan= new Scanner(System.in);
 		System.out.println("Enter any number:");
 		int num=scan.nextInt();
-		scan.close();
 		for(int i=2;i<=num/2;i++)
 		{
 			temp=num%i;
@@ -82,6 +81,7 @@ public class gl {
 			c = a + b;
 			System.out.print(a+" ");
 		}
+		System.out.println();
 	}
 
 	//main method which contains switch and do while loop
